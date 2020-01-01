@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="autowireCandidate" autowire-candidate="false" class="com.mjlf.spring.addBeantoContext.bean.AutowireCandidate"></bean>
+
+	<bean id="beanTest" init-method="init" class="com.mjlf.spring.addBeantoContext.bean.BeanTest"></bean>
+	<bean id="xmlBean" class="com.mjlf.spring.addBeantoContext.bean.XmlBeanTest" init-method="init"></bean>
+</beans>
